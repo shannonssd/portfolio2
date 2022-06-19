@@ -44,6 +44,10 @@
   background-color: $gitlab;
 }
 
+.portfolio i {
+  background-color: green;
+}
+
 .google i {
   background-color: $google;
 }
@@ -69,17 +73,31 @@
 }
 
 /* Hover Transition */
-.twitter i:hover,
-.google i:hover,
-.gitlab i:hover,
-.github i:hover,
-.linkedin i:hover,
-.facebook i:hover,
-.instagram i:hover,
-.stack-overflow i:hover,
-.kaggle i:hover,
-.medium i:hover {
-  background-color: $textColor;
+// .twitter i:hover,
+// .portfolio i:hover,
+// .google i:hover,
+// .gitlab i:hover,
+// .github i:hover,
+// .linkedin i:hover,
+// .facebook i:hover,
+// .instagram i:hover,
+// .stack-overflow i:hover,
+// .kaggle i:hover,
+
+.github i:hover {
+  background-color: rgb(87, 86, 86);
+}
+
+.google i:hover {
+  background-color: #ff2410;
+}
+
+.linkedin i:hover {
+  background-color: #14a1e2;
+}
+
+.portfolio i:hover {
+  background-color: rgb(1, 170, 1);
 }
 
 /* Media Query */

@@ -5,8 +5,11 @@
 }
 
 .experience-heading {
+  display: flex;
+  justify-content: center;
   font-size: 56px;
   font-weight: 400;
+  margin-bottom: 45px;
 }
 
 .experience-container {
@@ -25,13 +28,13 @@
 
 @media (max-width: 1380px) {
   .experience-heading {
-    font-size: 40px;
+    font-size: 45px;
   }
 }
 
 @media (max-width: 768px) {
   .experience-heading {
-    font-size: 30px;
+    font-size: 45px;
     text-align: center;
   }
 }

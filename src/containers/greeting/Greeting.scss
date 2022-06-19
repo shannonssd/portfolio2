@@ -1,12 +1,17 @@
 @import "../../_globalColor";
 
+@import url("https://fonts.googleapis.com/css2?family=Allison&family=Great+Vibes&display=swap");
+
 .main {
   width: 90%;
   padding: 20px 10px;
   margin: 0px auto;
   margin-top: 4rem;
 }
+
 .greet-main {
+  // z-index: 0;
+  // position: relative;
   width: 90%;
   padding: 20px 10px;
   margin: 0px auto;
@@ -45,8 +50,16 @@
   line-height: 40px;
 }
 
-.greeting-image-div > img {
+.greeting-image-div {
   max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+}
+
+.greeting-image-div > img {
+  width: 50%;
   height: auto;
 }
 
@@ -116,4 +129,77 @@
   .main {
     width: auto;
   }
+  .greeting-image-div > img {
+    width: 25%;
+    height: auto;
+  }
 }
+
+@media (max-width: 480px) and (min-width: 320px) {
+  .greeting-text {
+    font-size: 35px;
+  }
+  .greeting-text-p {
+    font-size: 12px;
+  }
+
+  .greeting-image-div > img {
+    width: 30%;
+    height: auto;
+  }
+}
+
+@media (max-width: 768px) and (min-width: 481px) {
+  .greeting-text {
+    font-size: 40px;
+  }
+  .greeting-text-p {
+    font-size: 14px;
+  }
+  .greeting-image-div > img {
+    width: 35%;
+    height: auto;
+  }
+}
+
+@media (max-width: 1024px) and (min-width: 769px) {
+  .greeting-text {
+    font-size: 48px;
+  }
+  .greeting-text-p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1200px) and (min-width: 1025px) {
+  .greeting-text {
+    font-size: 60px;
+  }
+  .greeting-text-p {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1201px) {
+  .greeting-text {
+    font-size: 65px;
+  }
+  .greeting-text-p {
+    font-size: 20px;
+  }
+}
+
+// @media (max-width: 480px) and (min-width: 320px) {
+// }
+
+// @media (max-width: 768px) and (min-width: 481px) {
+// }
+
+// @media (max-width: 1024px) and (min-width: 769px) {
+// }
+
+// @media (max-width: 1200px) and (min-width: 1025px) {
+// }
+
+// @media (min-width: 1201px) {
+// }

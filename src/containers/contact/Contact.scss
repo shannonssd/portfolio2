@@ -2,6 +2,7 @@
 
 .contact-div-main {
   display: flex;
+  flex-direction: column;
 }
 
 .dark-mode a {
@@ -13,10 +14,22 @@
 }
 
 .contact-title {
+  display: flex;
+  justify-content: center;
   font-size: 65px;
   font-weight: 400;
 }
 
+.contact-subtitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.contact-header {
+  margin-bottom: 10px;
+}
 .contact-detail,
 .contact-detail-email {
   margin-top: 20px;
@@ -31,10 +44,6 @@
   color: $textColor;
   text-shadow: 2px 1px 2px $contactDetailHoverTS;
   transition: all 0.3s;
-}
-
-.contact-subtitle {
-  text-transform: uppercase;
 }
 
 .contact-text-div {
@@ -61,7 +70,7 @@
   }
 
   .contact-title {
-    font-size: 40px;
+    font-size: 45px;
     text-align: center;
   }
 
@@ -84,4 +93,9 @@
   .contact-image-div {
     display: none;
   }
+}
+
+.contact-box {
+  display: flex;
+  justify-content: center;
 }

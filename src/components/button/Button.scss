@@ -1,19 +1,24 @@
 @import "../../_globalColor";
 
+.dark {
+  border: 1px solid white;
+}
+.light {
+  border: 1px solid #171c28;
+}
 .main-button {
-  background-color: $buttonColor;
-  border: solid 1px $buttonColor;
+  // background-color: $buttonColor;
+  // border: solid 1px $buttonColor;
   color: $textColorDark;
   font-weight: 700;
   width: max-content;
   padding: 13px 22px;
-  margin-right: 50px;
   text-transform: uppercase;
   border-radius: 6px;
   text-align: center;
   text-decoration: none;
   display: block;
-  margin-top: 20px;
+  // margin-top: 20px;
   font-size: 1rem;
   cursor: pointer;
   transition: all 0.3s ease-in-out 0s;
@@ -22,7 +27,6 @@
   background-color: $darkBoxShadow2;
   color: $buttonColor;
   transition: all 0.3s ease 0s;
-  transform: translateY(-3px);
 }
 .project-button {
   display: flex;
@@ -32,16 +36,66 @@
 .project-button > .main-button {
   margin-right: 0 !important;
 }
+
 /* Media Query */
 @media (max-width: 768px) {
   .main-button {
-    font-size: 0.938rem;
+    // font-size: 0.938rem;
     padding: 12px 18px;
     margin-right: 0px;
   }
 }
-@media (max-width: 320px) {
+// @media (max-width: 320px) {
+//   .main-button {
+//     font-size: 0.75rem;
+//   }
+// }
+
+@media (max-width: 480px) and (min-width: 320px) {
   .main-button {
-    font-size: 0.75rem;
+    font-size: 9px;
+    margin-right: 8px;
   }
 }
+
+@media (max-width: 768px) and (min-width: 481px) {
+  .main-button {
+    font-size: 10px;
+    margin-right: 11px;
+  }
+}
+
+@media (max-width: 1024px) and (min-width: 769px) {
+  .main-button {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 1200px) and (min-width: 1025px) {
+  .main-button {
+    font-size: 14px;
+    margin-right: 17px;
+  }
+}
+
+@media (min-width: 1201px) {
+  .main-button {
+    font-size: 16px;
+    margin-right: 20px;
+  }
+}
+
+// @media (max-width: 480px) and (min-width: 320px) {
+// }
+
+// @media (max-width: 768px) and (min-width: 481px) {
+// }
+
+// @media (max-width: 1024px) and (min-width: 769px) {
+// }
+
+// @media (max-width: 1200px) and (min-width: 1025px) {
+// }
+
+// @media (min-width: 1201px) {
+// }

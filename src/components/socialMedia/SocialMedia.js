@@ -1,6 +1,7 @@
 import React from "react";
 import "./SocialMedia.scss";
 import {socialMediaLinks} from "../../portfolio";
+import {Fade} from "react-reveal";
 
 export default function socialMedia() {
   if (!socialMediaLinks.display) {
@@ -9,6 +10,7 @@ export default function socialMedia() {
   return (
     <div className="social-media-div">
       {socialMediaLinks.github ? (
+        <Fade bottom duration={1000} delay={2500}>   
         <a
           href={socialMediaLinks.github}
           className="icon-button github"
@@ -18,9 +20,11 @@ export default function socialMedia() {
           <i className="fab fa-github"></i>
           <span></span>
         </a>
+        </Fade>
       ) : null}
 
       {socialMediaLinks.linkedin ? (
+        <Fade bottom duration={1000} delay={2600}> 
         <a
           href={socialMediaLinks.linkedin}
           className="icon-button linkedin"
@@ -30,9 +34,11 @@ export default function socialMedia() {
           <i className="fab fa-linkedin-in"></i>
           <span></span>
         </a>
+        </Fade>
       ) : null}
 
       {socialMediaLinks.gmail ? (
+        <Fade bottom duration={1000} delay={2700}> 
         <a
           href={`mailto:${socialMediaLinks.gmail}`}
           className="icon-button google"
@@ -42,6 +48,21 @@ export default function socialMedia() {
           <i className="fas fa-envelope"></i>
           <span></span>
         </a>
+        </Fade>
+      ) : null}
+
+      {socialMediaLinks.portfolio ? (
+        <Fade bottom duration={1000} delay={2800}> 
+        <a
+          href={socialMediaLinks.portfolio}
+          className="icon-button portfolio"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i className="fas fa-file"></i>
+          <span></span>
+        </a>
+        </Fade>
       ) : null}
 
       {socialMediaLinks.gitlab ? (

@@ -1,11 +1,8 @@
 import React, {useContext} from "react";
 import "./Contact.scss";
-import SocialMedia from "../../components/socialMedia/SocialMedia";
-import {illustration, contactInfo} from "../../portfolio";
 import {Fade} from "react-reveal";
-import email from "../../assets/lottie/email";
-import DisplayLottie from "../../components/displayLottie/DisplayLottie";
 import StyleContext from "../../contexts/StyleContext";
+import ContactUs from "./contactForm";
 
 export default function Contact() {
   const {isDark} = useContext(StyleContext);
@@ -14,54 +11,23 @@ export default function Contact() {
       <div className="main contact-margin-top" id="contact">
         <div className="contact-div-main">
           <div className="contact-header">
-            <h1 className="heading contact-title">{contactInfo.title}</h1>
-            <p
+            <h1 className="heading contact-title">Contact Me</h1>
+            <div
               className={
                 isDark
                   ? "dark-mode contact-subtitle"
                   : "subTitle contact-subtitle"
               }
             >
-              {contactInfo.subtitle}
-            </p>
-            <div
-              className={
-                isDark ? "dark-mode contact-text-div" : "contact-text-div"
-              }
-            >
-              {contactInfo.number && (
-                <>
-                  <a
-                    className="contact-detail"
-                    href={"tel:" + contactInfo.number}
-                  >
-                    {contactInfo.number}
-                  </a>
-                  <br />
-                  <br />
-                </>
-              )}
-              <a
-                className="contact-detail-email"
-                href={"mailto:" + contactInfo.email_address}
-              >
-                {contactInfo.email_address}
-              </a>
-              <br />
-              <br />
-              <SocialMedia />
+              I'm currently searching for new opportunities in the software engineering field. 
+              <br/>If you have a job opportunity, or would just like to chat, you can drop me a message below and I'll get back to you as soon as possible!
             </div>
           </div>
-          <div className="contact-image-div">
-            {illustration.animated ? (
-              <DisplayLottie animationData={email} />
-            ) : (
-              <img
-                alt="Man working"
-                src={require("../../assets/images/contactMailDark.svg")}
-              ></img>
-            )}
+          <div className="contact-box">
+          <ContactUs/>
+
           </div>
+          
         </div>
       </div>
     </Fade>

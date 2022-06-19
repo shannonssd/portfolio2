@@ -1,5 +1,5 @@
 @import "../../_globalColor";
-
+@import url("https://fonts.googleapis.com/css2?family=Allison&family=Great+Vibes&display=swap");
 /*React-headroom*/
 .headroom-wrapper {
   max-height: 100px;
@@ -17,14 +17,16 @@
 }
 
 .dark-menu li a:hover {
+  color: #171c28;
+  border-radius: 6px;
   background-color: $buttonColor !important;
 }
 
 .header {
-  background-color: $lightBackground1;
   max-width: 100%;
   padding: 15px 20px;
   margin: 0px auto;
+  background-color: white;
 }
 
 .header ul {
@@ -47,7 +49,9 @@
 
 .header li a:hover,
 .header .menu-btn:hover {
-  background-color: $headerHoverBG;
+  color: white;
+  border-radius: 6px;
+  background-color: $darkBackground;
 }
 
 .header .logo {
@@ -60,12 +64,26 @@
   line-height: normal;
 }
 
+.no-border {
+  border: none !important;
+}
+
+.dark {
+  color: white;
+}
+
+.light {
+  color: #171c28;
+}
 .header .logo-name {
-  font-family: "Agustina Regular";
+  // margin-left: 65px;
+  font-family: "Great Vibes", cursive;
+  // font-family: "Allison", cursive;
+  font-size: 45px;
   font-weight: bold;
   font-variant-ligatures: no-common-ligatures;
   -webkit-font-variant-ligatures: no-common-ligatures;
-  padding: 0 10px;
+  padding: 0 20px;
 }
 
 /* menu */
@@ -86,7 +104,10 @@
   position: relative;
   user-select: none;
 }
-
+// .greeting-text-div {
+//   background-color: white;
+//   position: relative;
+// }
 .header .menu-icon .navicon {
   background: $iconBackground;
   display: block;
@@ -159,7 +180,61 @@
 
 /* 48em = 768px */
 
-@media (min-width: 48em) {
+// @media (min-width: 48em) {
+//   .header li {
+//     float: left;
+//   }
+//   .header {
+//     display: flex;
+//     align-items: center;
+//     justify-content: space-between;
+//   }
+//   .header .menu {
+//     max-height: none;
+//   }
+//   .header .menu-icon {
+//     display: none;
+//   }
+// }
+
+@media (max-width: 480px) and (min-width: 320px) {
+  .header {
+    font-size: 12px;
+  }
+
+  .header .logo-name {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) and (min-width: 481px) {
+  .header {
+    font-size: 13px;
+  }
+
+  .header .logo-name {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 1024px) and (min-width: 769px) {
+  .header .logo-name {
+    font-size: 30px;
+  }
+
+  .header {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 1200px) and (min-width: 1025px) {
+  .header .logo-name {
+    font-size: 35px;
+  }
+  .header {
+    font-size: 16px;
+  }
+
   .header li {
     float: left;
   }
@@ -175,8 +250,29 @@
     display: none;
   }
 }
-@media (max-width: 960px) and (min-width: 768px) {
+
+@media (min-width: 1201px) {
+  .header .logo-name {
+    // margin-left: 65px;
+    font-size: 45px;
+  }
+
   .header {
-    font-size: 12px;
+    font-size: 18px;
+  }
+
+  .header li {
+    float: left;
+  }
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .header .menu {
+    max-height: none;
+  }
+  .header .menu-icon {
+    display: none;
   }
 }
