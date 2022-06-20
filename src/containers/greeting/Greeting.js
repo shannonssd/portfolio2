@@ -41,20 +41,58 @@ export default function Greeting() {
                     : "greeting-text-p subTitle"
                 }
               >
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. "
+                <div className="intro">
+                   Hello there! Welcome to my portfolio website! Ever since I was a young kid I’ve loved solving problems and creating things. What started out as an interest in Usborne puzzle books and Tamiya cars has developed today into an interest in creating things on the internet. 
+                </div>
+                <div className="intro">
+                   My interest in programming was brought to the forefront in my last job when I was tasked with collaborating with a company to build a new website. This motivated me to join a programming bootcamp where I could obtain more technical knowledge and have hands-on experience in building websites.
+                </div>
+                <div className="intro">
+                  I have recently graduated from Rocket Academy’s Bootcamp and am looking for opportunities as a Software Engineer. Feel free to contact me if you have a job opportunity, or would just like to chat!
+                </div>
+                <div className="intro">
+                Some technologies that I have worked with: 
+                </div>
+                <div className="tech-container">
+                  <p className="tech-all">
+                    Javascript
+                  </p>
+                  <p className="tech-all">
+                    PostgreSQL
+                  </p>
+                  <p className="tech-all">
+                    MongoDB
+                  </p>
+                  <p className="tech-all">
+                    Sequelize
+                  </p>
+                  <p className="tech-all">
+                     Express.js
+                  </p>
+                  <p className="tech-all">
+                    Node.js
+                  </p>
+                  <p className="tech-all">
+                    Socket.io
+                  </p>
+                  <p className="tech-all">
+                    AWS S3
+                  </p>
+                  <p className="tech-all">
+                    SQL
+                  </p>
+                  <p className="tech-all">
+                    React
+                  </p>
+                  <p className="tech-all">
+                    Material UI
+                  </p>
+                </div>
               </p>
+              <div className="social">
               <SocialMedia />
+              </div>
               </Fade>
-              {/* <div className="button-greeting-div">
-                <Button text="Contact me" href="#contact" />
-                {greeting.resumeLink && (
-                  <Button
-                    text="See my resume"
-                    newTab={true}
-                    href={greeting.resumeLink}
-                  />
-                )}
-              </div> */}
             </div>
           </div>
           <Fade bottom duration={1000} delay={2000} distance="40px">   
