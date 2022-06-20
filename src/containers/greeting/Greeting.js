@@ -21,7 +21,7 @@ export default function Greeting() {
       <div className={isDark ? "dark-mode greet-main": "greet-main" }id="about-me" >
         <div className="greeting-main">
           <div className="greeting-text-div">
-            <div>
+            <div className="about-me-container">
               <h1
                 className={isDark ? "dark-mode greeting-text" : "greeting-text"}
               >
@@ -60,6 +60,7 @@ export default function Greeting() {
           <Fade bottom duration={1000} delay={2000} distance="40px">   
           <div className="greeting-image-div">
             <img
+            className={isDark ? 'image-dark' : 'image-light'}
               alt="man sitting on table"
               src="shan_pic.jpg"
             ></img>

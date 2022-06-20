@@ -37,7 +37,7 @@ input {
 }
 
 input:checked + .slider {
-  background-color: $toggleCheck;
+  background-color: rgb(0, 102, 102);
 }
 
 input:focus + .slider {

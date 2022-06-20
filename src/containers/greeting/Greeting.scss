@@ -33,6 +33,7 @@
 .greeting-main > * {
   flex: 1;
   margin-bottom: 30px;
+  margin-top: 100px;
 }
 .button-greeting-div {
   display: flex;
@@ -43,6 +44,13 @@
   font-size: 70px;
   line-height: 1.1;
   color: $textColor !important;
+}
+
+.about-me-container {
+  // margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .greeting-text-p {
@@ -58,9 +66,18 @@
   height: auto;
 }
 
-.greeting-image-div > img {
+.image-light {
   width: 50%;
   height: auto;
+  box-shadow: rgba(0, 0, 0, 0.487) 0px 2px 4px 0px,
+    rgba(0, 0, 0, 0.32) 0px 2px 16px 0px;
+}
+
+.image-dark {
+  width: 50%;
+  height: auto;
+  box-shadow: rgba(255, 255, 255, 0.43) 0px 2px 4px 0px,
+    rgba(245, 245, 245, 0.32) 0px 2px 16px 0px;
 }
 
 .wave-emoji {
@@ -129,7 +146,8 @@
   .main {
     width: auto;
   }
-  .greeting-image-div > img {
+  .image-dark,
+  .image-light {
     width: 25%;
     height: auto;
   }
@@ -143,7 +161,8 @@
     font-size: 12px;
   }
 
-  .greeting-image-div > img {
+  .image-dark,
+  .image-light {
     width: 30%;
     height: auto;
   }
@@ -156,8 +175,9 @@
   .greeting-text-p {
     font-size: 14px;
   }
-  .greeting-image-div > img {
-    width: 35%;
+  .image-dark,
+  .image-light {
+    width: 50%;
     height: auto;
   }
 }
@@ -172,6 +192,12 @@
 }
 
 @media (max-width: 1200px) and (min-width: 1025px) {
+  .image-dark,
+  .image-light {
+    width: 45%;
+    height: auto;
+  }
+
   .greeting-text {
     font-size: 60px;
   }

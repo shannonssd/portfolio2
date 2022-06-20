@@ -1,13 +1,44 @@
 @import "../../_globalColor";
 
-.first {
-  background-color: red;
-  width: 50%;
+.title-icon {
+  display: flex;
+  align-items: center;
 }
 
-.second {
-  background-color: blue;
-  width: 50%;
+.icons {
+  margin-left: 10px;
+}
+
+.fa-github,
+.fa-window-maximize {
+  margin-left: 14px;
+  margin-right: 22px;
+  margin-bottom: 5px;
+  font-size: 45px;
+}
+
+.gitHub-dark {
+  color: rgb(170, 170, 170);
+}
+
+.gitHub-dark:hover {
+  color: rgb(255, 255, 255);
+}
+
+.gitHub-light {
+  color: rgb(0, 0, 0);
+}
+
+.gitHub-light:hover {
+  color: rgb(85, 85, 85);
+}
+
+.fa-window-maximize {
+  color: rgb(0, 155, 155);
+}
+
+.fa-window-maximize:hover {
+  color: rgb(2, 221, 221);
 }
 
 .title {
@@ -15,6 +46,7 @@
   justify-content: center;
   width: 100%;
   font-size: 56px;
+  margin-top: 200px;
 }
 .skills-main-div {
   display: flex;
@@ -31,7 +63,7 @@
   align-items: center;
   width: 100%;
   overflow: hidden;
-  margin: 100px 0px;
+  margin: 200px 0px;
 }
 
 .skills-text-div {
@@ -59,7 +91,7 @@
 }
 
 .tech-stack {
-  background-color: rgb(129, 130, 128);
+  background-color: rgb(0, 102, 102);
   margin: 5px;
   border-radius: 8px;
   padding: 5px;
@@ -70,15 +102,27 @@
   margin-bottom: 30px;
 }
 
-.skills-image-div {
+.skills-image-div-light,
+.skills-image-div-dark {
   width: 40%;
 }
 
-.skills-image-div > img {
+.skills-image-div-light > img {
   max-width: 120%;
   max-height: fit-content;
   margin: 0;
   padding: 0;
+  box-shadow: rgba(0, 0, 0, 0.487) 0px 2px 4px 0px,
+    rgba(0, 0, 0, 0.32) 0px 2px 16px 0px;
+}
+
+.skills-image-div-dark > img {
+  max-width: 120%;
+  max-height: fit-content;
+  margin: 0;
+  padding: 0;
+  box-shadow: rgba(255, 255, 255, 0.361) 0px 2px 4px 0px,
+    rgba(255, 255, 255, 0.288) 0px 2px 16px 0px;
 }
 
 .phone-container {
@@ -98,7 +142,8 @@
 .skills-heading {
   font-size: 48px;
   font-weight: 900;
-  margin-bottom: 5px;
+  margin: 0px;
+  height: inherit;
 }
 .subTitle {
   color: $subTitle;
@@ -144,7 +189,8 @@
     font-size: 16px;
     text-align: center;
   }
-  .skills-image-div {
+  .skills-image-div-light,
+  .skills-image-div-dark {
     /* display: none; */
     order: 2;
   }
@@ -192,7 +238,8 @@
     margin-bottom: 0px;
   }
 
-  .skills-image-div {
+  .skills-image-div-light,
+  .skills-image-div-dark {
     width: 70%;
   }
 
@@ -201,7 +248,8 @@
     margin-top: 20px;
   }
 
-  .skills-image-div {
+  .skills-image-div-light,
+  .skills-image-div-dark {
     display: flex;
     justify-content: center;
   }
@@ -250,8 +298,8 @@
     margin-bottom: 5px;
   }
   .skills-text-subtitle {
-    width: 350px;
-    font-size: 12px;
+    width: 450px;
+    font-size: 14px;
   }
   .tech,
   .tech-phone {
@@ -263,7 +311,8 @@
     margin-bottom: 0px;
   }
 
-  .skills-image-div {
+  .skills-image-div-light,
+  .skills-image-div-dark {
     width: 70%;
   }
 
@@ -272,10 +321,19 @@
     margin-top: 30px;
   }
 
-  .skills-image-div {
+  .skills-image-div-light,
+  .skills-image-div-dark {
     display: flex;
     justify-content: center;
     margin-top: 30px;
+  }
+
+  .fa-github,
+  .fa-window-maximize {
+    margin-left: 9px;
+    margin-right: 16px;
+    margin-bottom: 5px;
+    font-size: 30px;
   }
 }
 
@@ -285,6 +343,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 200px 0px;
   }
 
   .skills-main-div {
@@ -322,7 +381,7 @@
     margin-bottom: 5px;
   }
   .skills-text-subtitle {
-    width: 350px;
+    width: 600px;
     font-size: 16px;
   }
   .tech,
@@ -334,8 +393,10 @@
     margin-bottom: 0px;
   }
 
-  .skills-image-div {
+  .skills-image-div-light,
+  .skills-image-div-dark {
     width: 70%;
+    margin-bottom: 20px;
   }
 
   .skills-image-div-phone > img {
@@ -343,9 +404,18 @@
     margin-top: 50px;
   }
 
-  .skills-image-div {
+  .skills-image-div-light,
+  .skills-image-div-dark {
     display: flex;
     justify-content: center;
+  }
+
+  .fa-github,
+  .fa-window-maximize {
+    margin-left: 8px;
+    margin-right: 12px;
+    margin-bottom: 5px;
+    font-size: 32px;
   }
 }
 
@@ -365,6 +435,13 @@
   }
   .title {
     margin-bottom: 0px;
+  }
+  .fa-github,
+  .fa-window-maximize {
+    margin-left: 10px;
+    margin-right: 16px;
+    margin-bottom: 5px;
+    font-size: 40px;
   }
 }
 

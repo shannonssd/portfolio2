@@ -27,7 +27,7 @@ export default function Skills() {
       <div className="skills-main-div">
         <div className="skills-secondary-div">
           <Fade left duration={2000}>
-            <div className="skills-image-div">
+            <div className={isDark ? "skills-image-div-dark" : "skills-image-div-light"}>
                 <img
                   alt="keep"
                   src="project-6-latest.png"
@@ -36,11 +36,30 @@ export default function Skills() {
           </Fade>
           <Fade right duration={2000}>
               <div className="skills-text-div">
-              <h1
-                className={isDark ? "dark-mode skills-heading" : "skills-heading"}
-              >
-                KEEP
-              </h1>
+                <div className="title-icon">
+                    <h1
+                      className={isDark ? "dark-mode skills-heading" : "skills-heading"}
+                    >
+                      KEEP
+                    </h1>
+
+                  <div className="icons">
+                    <a
+                      href="https://github.com/shannonssd/KEEP-capstone-backend"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <i  className={isDark ? "fab fa-github gitHub-dark" : "fab fa-github gitHub-light"  }></i>
+                    </a>
+                     <a
+                      href="https://www.keepapp.live/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <i className="fas fa-window-maximize"></i>
+                    </a>
+                  </div>
+                </div>
               <p
                 className={
                   isDark
@@ -71,11 +90,31 @@ export default function Skills() {
         <div className="skills-secondary-div">
           <Fade left duration={2000}>
             <div className="skills-text-div-phone">
-              <h1
+             <div className="title-icon">
+                  <div className="icons">
+                    <a
+                      href="https://github.com/shannonssd/project-5-backend"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <i  className={isDark ? "fab fa-github gitHub-dark" : "fab fa-github gitHub-light"  }></i>
+
+                    </a>
+                     <a
+                      href="https://neighbourlyapp.live/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <i className="fas fa-window-maximize"></i>
+                    </a>
+                  </div>
+
+                  <h1
                 className={isDark ? "dark-mode skills-heading" : "skills-heading"}
-              >
+                >
                 Neighbourly
               </h1>
+            </div>
               <p
                 className={
                   isDark
@@ -115,7 +154,7 @@ export default function Skills() {
 
         <div className="skills-secondary-div">
           <Fade left duration={2000}>
-            <div className="skills-image-div">
+            <div className={isDark ? "skills-image-div-dark" : "skills-image-div-light"}>
                 <img
                   alt="Man Working"
                   src="project-4-latest.png"
@@ -124,11 +163,26 @@ export default function Skills() {
           </Fade>
           <Fade right duration={2000}>
             <div className="skills-text-div">
-              <h1
-                className={isDark ? "dark-mode skills-heading" : "skills-heading"}
-              >
-                OmNomNicient
-              </h1>
+              <div className="title-icon">
+                
+                <h1
+                  className={isDark ? "dark-mode skills-heading" : "skills-heading"}
+                >
+                  OmNomNicient
+                </h1>
+             
+                     <div className="icons">
+                    <a
+                      href="https://github.com/shannonssd/OmNomNicient-Project4"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <i  className={isDark ? "fab fa-github gitHub-dark" : "fab fa-github gitHub-light"  }></i>
+
+                    </a>
+                 
+                  </div>
+                   </div>
               <p
                 className={
                   isDark

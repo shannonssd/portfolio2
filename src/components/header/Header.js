@@ -36,25 +36,35 @@ function Header() {
           </label>
           <ul className={isDark ? "dark-menu menu" : "menu"}>
             {viewAboutMe && (
+              <Fade top duration={550}> 
               <li>
                 <a href="#about-me">About Me</a>
               </li>
+              </Fade>
             )}
             {viewProjects && (
+              <Fade top duration={650}> 
               <li>
                 <a href="#projects">Projects</a>
               </li>
+              </Fade>
             )}
             {viewExperience && (
+              <Fade top duration={750}> 
               <li>
+                
                 <a href="#experience">Experience</a>
               </li>
+              </Fade>
             )}
             {viewContact && (
+              <Fade top duration={850}> 
               <li>
                 <a href="#contact">Contact</a>
               </li>
+              </Fade>
             )}
+              <Fade top duration={950}> 
             <li>
               <Button
                 text="Resume"
@@ -63,6 +73,7 @@ function Header() {
               />
 
             </li>
+            </Fade>
             <li>
               {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
               <a>

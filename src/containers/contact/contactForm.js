@@ -1,8 +1,11 @@
-import React, { useRef } from 'react';
+import React, { useRef, useContext } from 'react';
 import emailjs from '@emailjs/browser';
 import './contactForm.scss';
+import StyleContext from "../../contexts/StyleContext";
+
 
 export default function ContactUs() {
+  const {isDark} = useContext(StyleContext);
   const form = useRef();
   const sendEmail = (e) => {
     e.preventDefault();
@@ -17,7 +20,7 @@ export default function ContactUs() {
   };
 
    return (
-    <form ref={form} onSubmit={sendEmail} className="form">
+    <form ref={form} onSubmit={sendEmail} className={isDark ? "form-dark" : "form-light"}>
           <textarea type="text" id="fname" name="from_name" 
           className = "input-name"
           placeholder="Name" />

@@ -1,7 +1,7 @@
 @import "../../_globalColor";
 @import "//netdna.bootstrapcdn.com/font-awesome/3.0/css/font-awesome.css";
 
-.form {
+.form-light {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -9,8 +9,20 @@
   border-radius: 25px;
   background-color: white;
   padding: 25px 5px 20px 0px;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
-    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  width: 560px;
+}
+
+.form-dark {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+  padding: 25px 5px 20px 0px;
+  box-shadow: rgb(132, 132, 132) 0px 2px 4px 0px,
+    rgba(132, 132, 132) 0px 2px 16px 0px;
   width: 560px;
 }
 
@@ -53,8 +65,9 @@
 }
 
 @media (max-width: 768px) and (min-width: 481px) {
-  .form {
-    padding: 25px 30px 10px;
+  .form-dark,
+  .form-light {
+    padding: 25px 20px 10px;
     width: 450px;
   }
   .input-name,
