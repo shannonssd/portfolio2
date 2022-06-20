@@ -124,8 +124,6 @@ export default function Skills() {
               >
                 NEIGHBOURLY is a community app that builds a greater sense of belonging amongst neighbours.<br/>
                 Users can give away pre-loved items to neighbours, discover and develop shared interests and chat with one another. <br/>
-                NEIGHBOURLY is a community app that builds a greater sense of belonging amongst neighbours.<br/>
-                 Users can give away pre-loved items to neighbours, discover and develop shared interests and chat with one another.
               </p>
               <div className="tech-phone">
                 <p className="tech-stack">MongoDB</p>

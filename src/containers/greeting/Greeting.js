@@ -55,35 +55,37 @@ export default function Greeting() {
                 </div>
                 <div className="tech-container">
                   <p className="tech-all">
+                    SQL
+                  </p>
+                  <p className="tech-all">
+                    React
+                  </p> 
+                  <p className="tech-all">
+                    AWS S3
+                  </p>
+                  <p className="tech-all">
+                    MongoDB
+                  </p>
+                  <p className="tech-all">
+                    Node.js
+                  </p>
+                  <p className="tech-all">
+                    Sequelize
+                  </p>
+                  <p className="tech-all">
+                    Socket.io
+                  </p>
+                  <p className="tech-all">
                     Javascript
                   </p>
                   <p className="tech-all">
                     PostgreSQL
                   </p>
                   <p className="tech-all">
-                    MongoDB
-                  </p>
-                  <p className="tech-all">
-                    Sequelize
-                  </p>
-                  <p className="tech-all">
                      Express.js
                   </p>
-                  <p className="tech-all">
-                    Node.js
-                  </p>
-                  <p className="tech-all">
-                    Socket.io
-                  </p>
-                  <p className="tech-all">
-                    AWS S3
-                  </p>
-                  <p className="tech-all">
-                    SQL
-                  </p>
-                  <p className="tech-all">
-                    React
-                  </p>
+                  
+                 
                   <p className="tech-all">
                     Material UI
                   </p>

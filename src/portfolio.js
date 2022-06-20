@@ -163,7 +163,7 @@ const workExperiences = {
       descBullets: [
         "Demonstrated success in working with and forming partnerships with doctors leading to 33% increase in client acquisition in 2020",
         "Spoke at multiple public talks and conducted online workshops, improving the organization’s brand awareness", 
-        "rained 8-10 employees locally and aboard and led the development of training programs to enhance job knowledge and success "
+        "Trained 8-10 employees locally and aboard and led the development of training programs to enhance job knowledge and success "
       ]
     }
   ]
