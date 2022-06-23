@@ -122,8 +122,35 @@
 }
 
 /* Media Query */
+@media (max-width: 480px) {
+  .subTitle {
+    font-size: 12px;
+  }
+}
 
+@media (max-width: 768px) {
+  .subTitle {
+    font-size: 15px;
+  }
+
+  .experience-text-role {
+    font-size: 22px;
+  }
+  .experience-text-company {
+    font-size: 22px;
+  }
+  .experience-text-date {
+    font-size: 18px;
+  }
+  .experience-text-desc {
+    font-size: 16px;
+  }
+}
 @media (max-width: 1380px) {
+  .subTitle {
+    font-size: 17px;
+  }
+
   .experience-text-role {
     padding-top: 0.5rem;
     font-size: 22px;
@@ -137,20 +164,5 @@
   .experience-roundedimg {
     width: 6.5rem;
     height: 6.5rem;
-  }
-}
-
-@media (max-width: 768px) {
-  .experience-text-role {
-    font-size: 22px;
-  }
-  .experience-text-company {
-    font-size: 22px;
-  }
-  .experience-text-date {
-    font-size: 18px;
-  }
-  .experience-text-desc {
-    font-size: 16px;
   }
 }

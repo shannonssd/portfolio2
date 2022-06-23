@@ -61,14 +61,54 @@
   background-color: lime;
 }
 
-@media (max-width: 480px) and (min-width: 320px) {
-}
-
-@media (max-width: 768px) and (min-width: 481px) {
+@media (max-width: 480px) {
   .form-dark,
   .form-light {
     padding: 25px 20px 10px;
-    width: 450px;
+    width: 200px;
+  }
+  .input-name,
+  .input-email,
+  .message {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    width: 180px;
+    height: 15px;
+    font-size: 12px;
+  }
+
+  .submit {
+    font-size: 30px;
+    border-radius: 10px;
+    font-weight: 900;
+    padding: 15px;
+    border: none;
+    width: 410px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-title {
+    font-size: 38px;
+  }
+  .contact-subtitle {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 768px) and (min-width: 481px) {
+  .contact-title {
+    font-size: 42px;
+  }
+  .contact-subtitle {
+    font-size: 15px;
+  }
+
+  .form-dark,
+  .form-light {
+    padding: 25px 20px 10px;
+    width: 400px;
   }
   .input-name,
   .input-email,
@@ -91,11 +131,11 @@
   }
 }
 
-@media (max-width: 1024px) and (min-width: 769px) {
-}
-
-@media (max-width: 1200px) and (min-width: 1025px) {
-}
-
-@media (min-width: 1201px) {
+@media (min-width: 769px) {
+  .contact-title {
+    font-size: 48px;
+  }
+  .contact-subtitle {
+    font-size: 18px;
+  }
 }
